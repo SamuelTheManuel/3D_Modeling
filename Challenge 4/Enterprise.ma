@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
-//Name: Starship.ma
-//Last modified: Sun, Jun 26, 2022 09:24:05 PM
+//Name: Enterprise.ma
+//Last modified: Sun, Jun 26, 2022 09:25:35 PM
 //Codeset: 1252
 requires maya "2023";
 requires "mtoa" "5.1.0";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202202161415-df43006fd3";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22000)";
-fileInfo "UUID" "E6AE37AF-4632-3E6C-9E56-0E9997158592";
+fileInfo "UUID" "0BB35A9A-4586-CEF8-D995-64B84E0C41C6";
 createNode transform -s -n "persp";
 	rename -uid "8C6F88C6-4338-4A03-F83F-818FCB50F5EC";
 	setAttr ".v" no;
@@ -24471,4 +24471,4 @@ connectAttr "groupId108.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId109.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId110.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId111.msg" ":initialShadingGroup.gn" -na;
-// End of Starship.ma
+// End of Enterprise.ma
