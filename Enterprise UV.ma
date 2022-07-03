@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: Enterprise UV.ma
-//Last modified: Sat, Jul 02, 2022 06:47:48 PM
+//Last modified: Sat, Jul 02, 2022 06:52:18 PM
 //Codeset: 1252
 requires maya "2023";
 requires "mtoa" "5.1.0";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202202161415-df43006fd3";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22000)";
-fileInfo "UUID" "E5E5D865-4364-B52E-3D28-2CA81A91B73E";
+fileInfo "UUID" "C8EF0759-481F-7382-7D66-8B83FB7649D7";
 createNode transform -s -n "persp";
 	rename -uid "8C6F88C6-4338-4A03-F83F-818FCB50F5EC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 13.500312691373168 17.923440655177558 27.156051816807178 ;
-	setAttr ".r" -type "double3" -27.938352740631448 1465.7999999998847 -8.831745995107086e-16 ;
+	setAttr ".t" -type "double3" 5.2456613494769702 3.8129411924081404 14.250335759219135 ;
+	setAttr ".r" -type "double3" -7.5383527406321553 1458.9999999998372 0 ;
 	setAttr ".rp" -type "double3" 0 0 -1.0658141036401503e-14 ;
 	setAttr ".rpt" -type "double3" -5.3192806108757285e-16 1.1368683772161603e-13 1.2434497875801753e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -23,7 +23,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 34.446364398986752;
+	setAttr ".coi" 15.461226417135;
 	setAttr ".ow" 8.465167697428047;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -12482,7 +12482,7 @@ createNode mesh -n "SaucerShape" -p "Saucer";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr -s 7 ".ciog[0].cog";
-	setAttr ".pv" -type "double2" 2.5085803270339966 0.49752110242843628 ;
+	setAttr ".pv" -type "double2" 2.3671720027923584 0.40273907780647278 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 6915 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 2.39521289 0.68526274 2.39799929
@@ -14254,7 +14254,7 @@ createNode mesh -n "SaucerShape" -p "Saucer";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 6841 ".pt";
-	setAttr ".pt[3086:3251]" -type "float3"  0.0088889599 -0.40047121 0.0024940204 
+	setAttr ".pt[3086:3251]" -type "float3"  -1.4901161e-08 0 0 0 0 0 0 0 0 0 0 
 		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
@@ -14266,8 +14266,7 @@ createNode mesh -n "SaucerShape" -p "Saucer";
 		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-		0 0 0;
+		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 	setAttr -s 6841 ".vt";
 	setAttr ".vt[0:165]"  2.8385129 2.81883001 -2.050045967 4.88856173 2.81883001 -2.89920974
 		 4.13911724 2.81883001 -2.79887438 3.43939519 2.81883001 -2.50904226 4.88856077 2.79973793 -2.15653396
